@@ -1,2 +1,9 @@
 // Currency formatting helper
-// TODO: implement Intl.NumberFormat based formatter
+export const formatCurrency = (amount) => {
+  const formatted = new Intl.NumberFormat('en-ZA', {
+    style: 'currency',
+    currency: 'ZAR',
+  }).format(Math.abs(amount));
+
+  return amount < 0 ? `-${formatted}` : `+${formatted}`;
+};
