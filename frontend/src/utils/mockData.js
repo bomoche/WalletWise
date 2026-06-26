@@ -130,3 +130,78 @@ export const EXPENSE_FORM_CATEGORIES = [
   { id: 'health', label: 'Health', icon: 'health_and_safety' },
   { id: 'travel', label: 'Travel', icon: 'flight' },
 ];
+
+export const MOCK_REQUESTS_SENT = [
+  {
+    id: 'req-sent-1',
+    name: 'Elena Rodriguez',
+    note: 'Office Lunch',
+    amount: 245.5,
+    status: 'PENDING',
+  },
+  {
+    id: 'req-sent-2',
+    name: 'Marcus Chen',
+    note: 'Movie Night Tickets',
+    amount: 150.0,
+    status: 'PENDING',
+  },
+  {
+    id: 'req-sent-3',
+    name: 'Sarah Jenkins',
+    note: 'Shared Utilities',
+    amount: 1128.0,
+    status: 'PAID',
+  },
+  {
+    id: 'req-sent-4',
+    name: 'David Wilson',
+    note: 'Workshop Fee',
+    amount: 450.0,
+    status: 'PAID',
+  },
+];
+
+export const MOCK_REQUESTS_RECEIVED = [
+  {
+    id: 'req-recv-1',
+    name: 'Sarah Jenkins',
+    note: 'Dinner at Omakase',
+    amount: 425.0,
+    timeAgo: '2h ago',
+    status: 'PENDING',
+  },
+  {
+    id: 'req-recv-2',
+    name: 'Robert Chen',
+    note: 'Shared Uber ride',
+    amount: 189.0,
+    timeAgo: 'Yesterday',
+    status: 'PENDING',
+  },
+  {
+    id: 'req-recv-3',
+    name: 'Alex Rivera',
+    note: 'Paid',
+    amount: 1200.0,
+    timeAgo: '3d ago',
+    status: 'PAID',
+  },
+  {
+    id: 'req-recv-4',
+    name: 'Elena Vance',
+    note: 'Declined',
+    amount: 150.0,
+    timeAgo: '1w ago',
+    status: 'DECLINED',
+  },
+];
+
+export const MOCK_CONTACTS = [
+  { id: 'contact-1', name: 'Alex' },
+  { id: 'contact-2', name: 'Jordan' },
+  { id: 'contact-3', name: 'Mia' },
+  { id: 'contact-4', name: 'David' },
+];
+
+export const REQUEST_CATEGORIES = ['GENERAL', 'DINING', 'UTILITIES', 'RENT'];
