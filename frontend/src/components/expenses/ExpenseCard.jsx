@@ -2,7 +2,7 @@ import { formatCurrency } from '../../utils/formatCurrency';
 
 // Single transaction/expense row used on Dashboard recent activity + Expenses list
 const ExpenseCard = ({ expense, onClick }) => {
-  const { title, category, icon, amount, date } = expense;
+  const { title, category, categoryLabel, icon, amount, date, status } = expense;
   const isIncome = amount > 0;
 
   return (
@@ -29,9 +29,21 @@ const ExpenseCard = ({ expense, onClick }) => {
         >
           {formatCurrency(amount)}
         </p>
-        <p className="text-[10px] font-label-caps text-on-surface-variant uppercase">
-          {category}
-        </p>
+        {status ? (
+          <span
+            className={`text-[10px] font-label-caps px-2 py-0.5 rounded-full ${
+              status === 'Pending'
+                ? 'bg-error-container text-on-error-container'
+                : 'bg-secondary-container/30 text-on-secondary-container'
+            }`}
+          >
+            {status}
+          </span>
+        ) : (
+          <p className="text-[10px] font-label-caps text-on-surface-variant uppercase">
+            {categoryLabel || category}
+          </p>
+        )}
       </div>
     </div>
   );

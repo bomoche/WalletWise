@@ -53,3 +53,80 @@ export const MOCK_TRANSACTIONS = [
     date: 'Oct 23, 6:00 PM',
   },
 ];
+
+export const EXPENSE_CATEGORIES = [
+  { id: 'all', label: 'All' },
+  { id: 'food', label: 'Food', icon: 'restaurant' },
+  { id: 'travel', label: 'Travel', icon: 'train' },
+  { id: 'bills', label: 'Bills', icon: 'receipt_long' },
+  { id: 'shopping', label: 'Shopping', icon: 'shopping_bag' },
+  { id: 'entertainment', label: 'Entertainment', icon: 'movie' },
+];
+
+export const MOCK_EXPENSES = [
+  {
+    id: 'exp-1',
+    title: 'Blueberry Cafe',
+    category: 'food',
+    categoryLabel: 'Food & Drink',
+    icon: 'restaurant',
+    amount: -245.5,
+    date: 'Today, 2:45 PM',
+    status: 'Completed',
+    group: 'Today',
+  },
+  {
+    id: 'exp-2',
+    title: 'Metropolitan Transit',
+    category: 'travel',
+    categoryLabel: 'Travel',
+    icon: 'train',
+    amount: -57.5,
+    date: 'Today, 8:12 AM',
+    status: 'Completed',
+    group: 'Today',
+  },
+  {
+    id: 'exp-3',
+    title: 'Electric Co. Monthly',
+    category: 'bills',
+    categoryLabel: 'Bills',
+    icon: 'receipt_long',
+    amount: -1420.0,
+    date: 'Yesterday, 11:30 PM',
+    status: 'Pending',
+    group: 'Yesterday',
+  },
+  {
+    id: 'exp-4',
+    title: 'Urban Threads',
+    category: 'shopping',
+    categoryLabel: 'Shopping',
+    icon: 'shopping_bag',
+    amount: -899.99,
+    date: 'Yesterday, 5:15 PM',
+    status: 'Completed',
+    group: 'Yesterday',
+  },
+  {
+    id: 'exp-5',
+    title: 'Interest Credit',
+    category: 'income',
+    categoryLabel: 'Income',
+    icon: 'savings',
+    amount: 124.5,
+    date: 'Yesterday, 1:00 AM',
+    status: 'Completed',
+    group: 'Yesterday',
+  },
+];
+
+export const EXPENSE_FORM_CATEGORIES = [
+  { id: 'shopping', label: 'Shopping', icon: 'shopping_cart' },
+  { id: 'dining', label: 'Dining', icon: 'restaurant' },
+  { id: 'transport', label: 'Transport', icon: 'directions_car' },
+  { id: 'bills', label: 'Bills', icon: 'home' },
+  { id: 'movies', label: 'Movies', icon: 'movie' },
+  { id: 'health', label: 'Health', icon: 'health_and_safety' },
+  { id: 'travel', label: 'Travel', icon: 'flight' },
+];
